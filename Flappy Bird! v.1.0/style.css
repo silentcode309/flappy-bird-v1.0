@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --y: 50;
+    --x: 0;
+    --x2: -100;
+    --x3: -200;
+    --backgroundx1: 0;
+    --backgroundx2: 50;
+    --backgroundx3: 100;
+    --backgroundx4: 150;
+    --backgroundx5: 200;
+    --backgroundx6: 250;
+    --backgroundx7: 300;
+    --poleY2: 0;
+    --poleY3: 0;
+    --costumex: 0;
+    --gameboardy: -80;
+    --settingx: 0;
+    --scrollBarx: 16.2;
+    --scrollBarx2: 16.2;
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.cool {
+
+    font-family: cursive;
+    position: absolute;
+    background-color: brown;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx1) * 1vh);
+}
+
+.cool2 {
+
+    font-family: cursive;
+    position: absolute;
+    background-color: brown;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx2) * 1vh);
+}
+
+.cool3 {
+    font-family: cursive;
+    position: absolute;
+    background-color: brown;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx3) * 1vh);
+}
+
+.cool4 {
+    font-family: cursive;
+    position: absolute;
+    background-color: brown;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx4) * 1vh);
+}
+
+.cool5 {
+    font-family: cursive;
+    position: absolute;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx5) * 1vh);
+}
+
+.cool6 {
+    font-family: cursive;
+    position: absolute;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx6) * 1vh);
+}
+
+.cool7 {
+    font-family: cursive;
+    position: absolute;
+    width: 51vh;
+    height: 100%;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png");
+    left: calc(var(--backgroundx7) * 1vh);
+}
+
+
+
+.intro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0vh;
+    background-color: aqua;
+
+}
+
+.head {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 10vh;
+    height: 7vh;
+    border-radius: 0px;
+    bottom: calc(var(--y) * 1vh);
+    position: absolute;
+    left: calc(var(--costumex) * 1vh + 100vh);
+
+
+
+
+
+}
+
+.head2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 14.5vh;
+    height: 6.5vh;
+    bottom: calc(var(--y) * 1vh);
+    position: absolute;
+    left: calc(var(--costumex) * 1vh - 402vh);
+
+}
+
+
+
+.poles-top {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20vh;
+    position: absolute;
+    right: calc(var(--x) * 1vh);
+    bottom: calc(var(--poleY) * 1vh + 70vh);
+
+}
+
+.poles-top2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20vh;
+    position: absolute;
+    right: calc(var(--x2) * 1vh);
+    bottom: calc(var(--poleY2) * 1vh + 70vh);
+
+}
+
+.poles-top3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20vh;
+    position: absolute;
+    right: calc(var(--x3) * 1vh);
+    bottom: calc(var(--poleY3) * 1vh + 70vh);
+
+}
+
+
+
+
+
+.poles-bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20vh;
+    position: absolute;
+    right: calc(var(--x)* 1vh);
+    bottom: calc(var(--poleY) * 1vh - 60vh);
+
+}
+
+.poles-bottom2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    height: 100%;
+    width: 20vh;
+    position: absolute;
+    right: calc(var(--x2)* 1vh);
+    bottom: calc(var(--poleY2) * 1vh - 60vh);
+}
+
+.poles-bottom3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20vh;
+    position: absolute;
+    right: calc(var(--x3)* 1vh);
+    bottom: calc(var(--poleY3) * 1vh - 60vh);
+}
+
+.hitbox {
+    width: 5vh;
+    height: 5vh;
+    bottom: calc(var(--y) * 1vh + 0.5vh);
+    left: 102.5vh;
+    position: absolute;
+}
+
+
+
+.best-score-text {
+    font-family: cursive;
+    font-size: x-large;
+    position: absolute;
+    bottom: 5vh;
+
+}
+
+
+
+.score-text-box {
+    font-family: cursive;
+    font-size: x-large;
+    position: absolute;
+    bottom: 10vh;
+    left: 41vh
+}
+
+.score-box {
+    font-family: cursive;
+    font-size: x-large;
+    position: absolute;
+    bottom: 10vh;
+    left: 52vh;
+}
+
+.best-score-box {
+    font-family: cursive;
+    font-size: x-large;
+    position: absolute;
+    bottom: 5vh;
+    left: 60vh;
+}
+
+.total-jumps-text-box {
+    font-family: cursive;
+    font-size: x-large;
+    position: absolute;
+    bottom: 15vh;
+    left: 41vh;
+}
+
+.total-jumps-box {
+    font-family: cursive;
+    font-size: x-large;
+    position: absolute;
+    bottom: 15vh;
+    left: 61vh;
+}
+
+.score {
+    font-size: xx-large;
+    font-family: cursive;
+    position: absolute;
+    top: 1vh;
+    left: 110vh;
+
+}
+
+.score-text {
+    font-size: xx-large;
+    font-family: cursive;
+    position: absolute;
+    top: 1vh;
+    left: 96vh;
+}
+
+.play-button {
+    width: 20vh;
+    height: 10vh;
+    bottom: 20vh;
+    position: absolute;
+}
+
+
+.gameover-box {
+    width: 100vh;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(192, 180, 106);
+    bottom: calc(var(--gameboardy) * 1vh);
+    border: 4px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+h1 {
+    position: absolute;
+    height: 5vh;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 310px;
+    padding: 1.2rem 0;
+    font-family: 'Press Start 2p', cursive;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -3vh;
+
+}
+
+
+
+.setting-logo {
+    width: 10vh;
+    height: 10vh;
+    right: calc(var(--settingx) * 1vh);
+    top: 2vh;
+    position: absolute;
+
+    border: 3px solid;
+}
+
+.background-settings {
+    background-color: purple;
+    width: 30vh;
+    height: 30vh;
+    top: -10vh;
+    right: calc(var(--settingx) * 1vh - 30vh);
+    position: absolute;
+    border: 3px solid;
+}
+
+.background-hide {
+    background-color: purple;
+    width: 30vh;
+    height: 100%;
+    left: 26vh;
+    position: absolute;
+}
+
+.scroll-box {
+    border: 3px solid;
+    position: absolute;
+    height: 2vh;
+    width: 10vh;
+    top: 50%;
+    left: 16vh;
+    border-radius: 10px;
+}
+
+.scroll-box2 {
+    border: 3px solid;
+    position: absolute;
+    height: 2vh;
+    width: 10vh;
+    top: 70%;
+    left: 16vh;
+    border-radius: 10px;
+}
+
+.acceleration-setting-text {
+    font-family: cursive;
+    position: absolute;
+    left: 2vh;
+    top: 48%;
+}
+
+.slowmotion-setting-text {
+    font-family: cursive;
+    position: absolute;
+    left: 4vh;
+    top: 68%;
+}
+
+.scroll-bar {
+    background-color: orange;
+    height: 2vh;
+    width: 10vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 70.5%;
+    left: calc(var(--scrollBarx)* 1vh)
+}
+
+
+.scroll-bar-circle {
+    height: 18px;
+    width: 18px;
+    background-color: gray;
+    top: 70%;
+    left: calc(var(--scrollBarx) * 1vh);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.scroll-bar-circle2 {
+    height: 18px;
+    width: 18px;
+    background-color: gray;
+    top: 50%;
+    left: calc(var(--scrollBarx2) * 1vh);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.scroll-bar2 {
+    background-color: orange;
+    height: 2vh;
+    width: 10vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 50.4%;
+    left: calc(var(--scrollBarx2) * 1vh);
+}
